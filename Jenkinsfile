@@ -1,7 +1,7 @@
 def PULL_REQUEST = env.CHANGE_ID
-def workspace = pwd()
-node('master'){
 
+node('master'){
+def workspace = pwd()
 stage('test'){
   echo "${PULL_REQUEST}"
   echo "${workspace}"
