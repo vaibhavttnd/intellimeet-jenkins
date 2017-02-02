@@ -1,4 +1,4 @@
-def PULL_REQUEST = env.CHANGE_ID
+def PULL_REQUEST = 'test'
 node('master'){
 
 stage('test'){
